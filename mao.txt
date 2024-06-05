@@ -1,0 +1,31 @@
+home .EJS
+when u goes to the 
+'/' route_static route will render the home page 
+home page with ejs has the post request when the 
+form is submited with the post request
+
+in the form the post request from the form 
+will go here ->>app.use("/url", urlRoute);in index.js file
+then fromt route it will diverted to the  
+->>const urlRoute = require("./routes/url");
+routes/url
+then fromt there it goes to the 
+->>>router.post('/',handleGenerateNewShortURL);
+const {handleGenerateNewShortURL,handleGetAnalytics}=require("../controllers/url");
+which is in the model folder 
+isme tu return kr rah atha vo jo tuze json format me id mil rahi thi
+in this way this will work 
+
+
+^^^THIS WORK IN STATEFULL AUTHENTICATION 
+   con's : takes extra memory from the server
+   wheen the server get restart sabhi user get logout 
+   memory intensive
+
+
+^^^ TO DELETE ALL THE URLS 
+  db.urls.delete many({})
+
+**** TOken ske andar actual data store karna he 
+    isliye stateless meyhode use kr rahe he is
+    
